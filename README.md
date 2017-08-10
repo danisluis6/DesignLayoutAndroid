@@ -42,10 +42,11 @@ Problem => I wanna shoot Interface to B(Adapter, Activity or Fragment)
 + Way two: A.constructor(new Interface) => Choose this way
 - [NEXT 4] We create Interface to get Interface come from A in constructor or method.
 - [NEXT 5] Find place to call event that you need to process like
-For example:
-=> Get intent from Adapter 
+
+### For example:
+#### Get intent from Adapter 
 + method getIntent(Intent intent)
-=> Show dialog progressbar
+#### Show dialog progressbar
 + new Interface(){
   method() { showProgressBar();}
 }
