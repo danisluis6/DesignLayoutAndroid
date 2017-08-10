@@ -34,11 +34,11 @@
 + Solution 1: 
 A => I wana shoot Interface to B(Adapter, Activity or Fragment) 
 => Get data from B(But, Data come from process in B not constructor). How can I do that?
-[NEXT 1] Declare Interface.
-[NEXT 2] Specify event you will call in where?
-[THIS CASE] We will call in B.
-[NEXT 3] We will transfer Interface to B by these ways below
-- Way one: B.method(new Interface) 
-- Way two: A.constructor(new Interface) => Choose this way
-[NEXT 4] We create Interface to get Interface come from A in constructor or method.
-[NEXT 5] Find place to call event that you need to process like
+- [NEXT 1] Declare Interface.
+- [NEXT 2] Specify event you will call in where?
+- [THIS CASE] We will call in B.
+- [NEXT 3] We will transfer Interface to B by these ways below
++ Way one: B.method(new Interface) 
++ Way two: A.constructor(new Interface) => Choose this way
+- [NEXT 4] We create Interface to get Interface come from A in constructor or method.
+- [NEXT 5] Find place to call event that you need to process like
