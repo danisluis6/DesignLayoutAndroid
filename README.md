@@ -51,6 +51,48 @@ Problem => I wanna shoot Interface to B(Adapter, Activity or Fragment)
   method() { showProgressBar();}
 }
 
+### Solution 1':
+Problem => We will develop from Problem above. When we get data from Interface. What is the next step.
+=> I wanna send data to Activity(Imagine A is fragment inside Activity)
+#### Get intent from Adapter 
++ method getIntent(Intent intent)
+#### Show dialog progressbar
++ new Interface(){
+  method() { startActivityForResult(intent) }
+}
+
 ### Solution 2:
-Problem => I wanna shoot Interface to B(Adapter, Activity or Fragment)
-=> 
+Problem => We will expand more.
+Let me show example.
+#### Example 1:
+public static MainActivity extends AppCompatActivity{
+  ... new B(new Interface(){
+    public void methodA(){
+      // TODO
+      call action as close DialogBar or hiddenButton.
+    }
+    
+    public void methodB(int data){
+      // TODO 
+      wanna get "data" and call action to process data.
+    }
+  }
+}
+
+### Example 2:
+public static MainActivity extends AppCompatActivity implement Interface{
+  @Override
+  public void methodA(){
+      // TODO
+      call action as close DialogBar or hiddenButton.
+  }
+    
+  @Override
+  public void methodB(int data){
+      // TODO 
+      wanna get "data" and call action to process data.
+  }
+}
+
+### Example 3: Applying MVP
+view(A) => Presenter(B) Using Constructor to transfer object.
