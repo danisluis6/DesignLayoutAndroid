@@ -32,8 +32,8 @@
 
 ## Interface and these solutions to apply it.
 ### Solution 1: 
-A => I wana shoot Interface to B(Adapter, Activity or Fragment) 
-=> Get data from B(But, Data come from process in B not constructor). How can I do that?
+Problem => I wanna shoot Interface to B(Adapter, Activity or Fragment) 
+=> Get data and execute event from B(But, Data come from process in B not constructor). How can I do that?
 - [NEXT 1] Declare Interface.
 - [NEXT 2] Specify event you will call in where?
 - [THIS CASE] We will call in B.
@@ -42,3 +42,14 @@ A => I wana shoot Interface to B(Adapter, Activity or Fragment)
 + Way two: A.constructor(new Interface) => Choose this way
 - [NEXT 4] We create Interface to get Interface come from A in constructor or method.
 - [NEXT 5] Find place to call event that you need to process like
+For example:
+=> Get intent from Adapter 
++ method getIntent(Intent intent)
+=> Show dialog progressbar
++ new Interface(){
+  method() { showProgressBar();}
+}
+
+### Solution 2:
+Problem => I wanna shoot Interface to B(Adapter, Activity or Fragment)
+=> 
