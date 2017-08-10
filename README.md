@@ -31,7 +31,7 @@
 ====> new Object(RadioGroup) and use method getCheckedRadioButtonId() to return ID of RadioButton and compare.
 
 ## Interface and these solutions to apply it.
-+ Solution 1: 
+### Solution 1: 
 A => I wana shoot Interface to B(Adapter, Activity or Fragment) 
 => Get data from B(But, Data come from process in B not constructor). How can I do that?
 - [NEXT 1] Declare Interface.
